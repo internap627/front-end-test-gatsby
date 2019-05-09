@@ -3,7 +3,7 @@
 The aim of this test is to ensure that you can style react/gatsby pages using scss modules
 
 ## The project
-- You need to build this page : https://www.figma.com/file/dkR892Zpog7LMBq0Ho2Lgq/Wireframing-Copy?node-id=0%3A1
+- You need to build the POSTS template/page, see visual here : https://www.figma.com/file/dkR892Zpog7LMBq0Ho2Lgq/Wireframing-Copy?node-id=0%3A1
 - Build it using the Mobile first approach, utilsing media queries for Tablet and Desktop
 - Our clients some times only provide desktop visuals and leave the responsive to us
 - You will need to make this page responsive using html/scss
