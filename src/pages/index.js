@@ -2,6 +2,7 @@ import React from "react"
 import styles from './index.module.scss'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Card from '../components/Card'
 
 const IndexPage = () => (
   <Layout>
@@ -9,16 +10,18 @@ const IndexPage = () => (
     <div className={styles.block}>
       <div className={styles.container}>
         <header className={styles.header}>
-          Header
+          <div className={styles.left}/>
+          <div className={styles.right}>
+            <p>Author name</p>
+            <h2>The best way to wireframe a website</h2>
+            <a href='#'>Read More</a>
+          </div>
         </header>
             <div className={styles.content}>
-              <h1>Hello World</h1>
-                <p>Welcome to your new Gatsby site.</p>
-                <p>Now go build something great.</p>
+              <Card />
+              <Card />
             </div>
-        <footer className={styles.footer}>
-          Footer
-        </footer>
+        
       </div>
     </div>
   </Layout>
