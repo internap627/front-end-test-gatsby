@@ -62,7 +62,9 @@
                     font-size: 14px;
                     line-height: 20px;
                     color: #FFFFFF;
-                   
+                    @media(max-width: 768px){
+                        top: 45px;
+                    }
                 }
                 h2 {
                     width: 492px;
@@ -78,11 +80,13 @@
                         max-width: 325px;
                         font-size: 38px;
                         line-height: 40px;
+                        top: 80px;
                     }
                     @media (max-width: 491px) {
                         max-width: 200px;
                         font-size: 30px;
                         line-height: 35px;
+                        top: 70px;
                     }
                 }
                 a {
@@ -132,13 +136,13 @@
                     font-size: 24px;
                     line-height: 34px;
                     color: #000000;
-                    padding: 48px 48px 0 48px;
-                    margin: 0;
+                    padding: 48px 48px 10px 48px;
+                    margin: 0 auto;
                     @media(max-width: 768px){
                         
                         font-size: 20px;
                         line-height: 20px;
-                        padding: 40px 40px 0 40px;
+                        padding: 25px 40px 15px 40px;
                     }
                 }
                 p {
