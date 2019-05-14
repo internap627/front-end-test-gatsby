@@ -9,14 +9,17 @@
     // top: 0px;
     position: relative;
     .container{
-        max-width: 1180px;
+        max-width: 1200px;
         height: 700;
-        // margin: 80px 135px;
         margin: 0 auto;
         position: relative;
-        padding: 0 5px 0 5px;
+        padding: 0 15px 0 15px;
         top: 80px;
 
+        @media (max-width: 768px) {
+            padding: 15px;
+            top: 0;
+        }
         
         
         .header{
@@ -30,6 +33,12 @@
                 position: relative; 
                 height: 370px;
                 background: #222222;
+                @media(max-width: 768px){
+                    height: 300px;
+                }
+                @media(max-width: 491px){
+                    height: 250px;
+                }
             }
             .right{
                 position: relative;
@@ -37,6 +46,13 @@
                 background: #000000;
                 display: grid;
                 grid-template-rows: repeat(3, auto);
+                @media(max-width: 768px){
+                    height: 300px;
+                }
+                @media(max-width: 491px){
+                    height: 250px;
+                }
+
                 p{
                     position: absolute;
                     width: 81px;
@@ -46,6 +62,7 @@
                     font-size: 14px;
                     line-height: 20px;
                     color: #FFFFFF;
+                   
                 }
                 h2 {
                     width: 492px;
@@ -57,6 +74,16 @@
                     left: 30px;
                     position: absolute;
                     margin: 0;
+                    @media (max-width: 768px) {
+                        max-width: 325px;
+                        font-size: 38px;
+                        line-height: 40px;
+                    }
+                    @media (max-width: 491px) {
+                        max-width: 200px;
+                        font-size: 30px;
+                        line-height: 35px;
+                    }
                 }
                 a {
                     width: 87px;
@@ -67,6 +94,13 @@
                     position: absolute;
                     top: 295px;
                     left: 30px;
+                    @media(max-width: 768px){
+                        top: 240px;
+                        font-size: 12px;
+                    }
+                    @media(max-width: 491px){
+                        top: 210px;
+                    }
                 }
             }
 
@@ -79,10 +113,17 @@
             bottom: 0;
             height: 290px;
             margin: 40px 0 0 0;
+            @media(max-width: 768px){
+                margin: 15px 0 0 0;
+                grid-gap: 10px;
+                
+            }
+            @media(max-width: 491px){
+                grid-template-columns: repeat(1, auto);      
+                
+            }
 
             .cardgroup {
-                
-                max-height: 290px;
                 background: #FFFFFF;
                 position: relative;
 
@@ -93,18 +134,36 @@
                     color: #000000;
                     padding: 48px 48px 0 48px;
                     margin: 0;
+                    @media(max-width: 768px){
+                        
+                        font-size: 20px;
+                        line-height: 20px;
+                        padding: 40px 40px 0 40px;
+                    }
                 }
                 p {
                     padding: 0 48px 0 48px;
                     font-size: 18px;
                     line-height: 25px;
                     color: #000000;
+                    @media(max-width: 768px){
+                        
+                        font-size: 15px;
+                        line-height: 20px;
+                        padding: 0 40px 0 40px;
+                    }
                 }
                 a{
                     padding-left: 48px;
                     font-size: 14px;
                     line-height: 20px;
                     color: #000000;
+                    @media(max-width: 768px){
+                        
+                        font-size: 12px;
+                        line-height: 25px;
+                        padding-left: 40px;
+                    }
                 }
 
             }
