@@ -5,9 +5,8 @@
     background: #F2F2F2;
     width: 100%;
     height: 860px;
-    // left: 0px;
-    // top: 0px;
     position: relative;
+  
     .container{
         max-width: 1200px;
         height: 700;
@@ -27,12 +26,12 @@
             grid-template-columns: repeat(1, 1fr 2fr);
             grid-gap: 0;
 
-            
+
             
             .left{
+                background: #222222;
                 position: relative; 
                 height: 370px;
-                background: #222222;
                 @media(max-width: 768px){
                     height: 300px;
                 }
@@ -41,18 +40,17 @@
                 }
             }
             .right{
-                position: relative;
-                max-height: 370px;
                 background: #000000;
                 display: grid;
                 grid-template-rows: repeat(3, auto);
+                position: relative; 
+                height: 370px;
                 @media(max-width: 768px){
                     height: 300px;
                 }
                 @media(max-width: 491px){
                     height: 250px;
                 }
-
                 p{
                     position: absolute;
                     width: 81px;
@@ -64,10 +62,10 @@
                     color: #FFFFFF;
                     @media(max-width: 768px){
                         top: 45px;
+                        font-size: 12px;
                     }
                 }
                 h2 {
-                    width: 492px;
                     height: 125;
                     color: #FFFFFF;
                     font-size: 48px;
@@ -76,17 +74,19 @@
                     left: 30px;
                     position: absolute;
                     margin: 0;
+                    padding-right: 5px;
                     @media (max-width: 768px) {
                         max-width: 325px;
-                        font-size: 38px;
+                        font-size: 34px;
                         line-height: 40px;
                         top: 80px;
                     }
                     @media (max-width: 491px) {
                         max-width: 200px;
-                        font-size: 30px;
-                        line-height: 35px;
+                        font-size: 20px;
+                        line-height: 30px;
                         top: 70px;
+                        
                     }
                 }
                 a {
@@ -100,10 +100,11 @@
                     left: 30px;
                     @media(max-width: 768px){
                         top: 240px;
-                        font-size: 12px;
+                        font-size: 16px;
                     }
                     @media(max-width: 491px){
                         top: 210px;
+                        font-size: 12px;
                     }
                 }
             }
@@ -115,7 +116,8 @@
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 30px;
             bottom: 0;
-            height: 290px;
+            height: 295px;
+            padding-bottom: 5px;
             margin: 40px 0 0 0;
             @media(max-width: 768px){
                 margin: 15px 0 0 0;
@@ -124,7 +126,6 @@
             }
             @media(max-width: 491px){
                 grid-template-columns: repeat(1, auto);      
-                
             }
 
             .cardgroup {
